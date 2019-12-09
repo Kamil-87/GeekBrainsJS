@@ -1,0 +1,130 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+body
+    background-color: #232323
+    height: 100%
+    min-height: 100%
+    font-family: Roboto,San Francisco,Helvetica Neue,Helvetica,Arial,sans-serif
+    font-weight: 400
+    font-size: 15px
+    line-height: 24px
+    color: #ffffff
+
+input[type = "text"]
+  padding: 5px 12px
+  text-transform: capitalize
+  border-radius: 4px
+  font-weight: 400
+  font-size: 15px
+  color: #50667b
+
+input
+  outline: none
+  &:active,
+  &:focus
+    outline: none
+
+.container
+  width: 1140px
+  margin: 0 auto
+
+.main code
+  font-family: Consolas,Lucida Console,Menlo,Monaco,monospace
+  padding: 2px 4px
+  background: #f5f2f0
+  border-radius: 2px
+
+.header
+  height: 96px
+  border-bottom: 2px solid rgba(164, 175, 221, 0.2)
+  display: flex
+  align-items: center
+  justify-content: space-around
+
+.course
+  &__badge
+    height: 50px
+  &__title
+    font-weight: 400
+    font-size: 24px
+    line-height: 32px
+  &__date
+    font-weight: 400
+    font-size: 18px
+    line-height: 27px
+
+
+.task
+  &__one
+    background-color: #f4f5fa
+    padding: 24px
+    border-radius: 4px
+    margin-top: 20px
+    color: #50667b
+  &__two
+    @extend .task__one
+  &__three
+    @extend .task__one
+  &__for
+    @extend .task__one
+  &__output
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #ffffff
+    height: 50px
+    padding: 20px
+    margin-top: 20px
+    &__admin
+      text-transform: capitalize
+
+.btn
+  padding: 12px 16px
+  text-transform: capitalize
+  border-radius: 4px
+  font-family: Roboto,San Francisco,Helvetica Neue,Helvetica,Arial,sans-serif
+  font-weight: 400
+  font-size: 15px
+  cursor: pointer
+  background-color: #6f64e9
+  color: #fff
+  border-width: 0
+  &__start
+    display: block
+    margin: 20px auto
+  &:hover
+    filter: brightness(0.9)
+  &:active
+    outline: 5px auto -webkit-focus-ring-color
+    outline-offset: -2px
+
+
+.output__sum
+  height: 50px
+  width: 150px
+  line-height: 50px
+  background-color: #ffffff
+  text-align: center
+
+.task__for__answer
+  background-color: #ffffff
+  width: 80%
+  border-collapse: collapse
+  margin: 20px auto
+  & tr
+    border-bottom: 1px solid #ccc
+    &:first-child th
+      border-bottom: 3px solid #ccc
+      vertical-align: bottom
+  & th
+    padding: 2px 13px 2px 5px
+    text-align: left
+  & td
+    padding: 2px 13px 2px 5px
+
+.footer
+  text-align: center
+.copy
+  padding: 20px

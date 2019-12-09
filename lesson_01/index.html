@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>course_1</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/custom.js"></script>
+</head>
+<body>
+    <header class="header container">
+        <a href="#" class="course"><img src="./img/js-badge.jpg" alt="js" class="course__badge"></a>
+        <h2 class="course__title">Базовый курс JavaScript</h2>
+        <span class="course__date">от 21.11.2019г.</span>
+    </header>
+
+    <main class="main container">
+        <section class="lesson_1">
+            <div class="task">
+                <div class="task__one">
+                    <h3>
+                        1. Задать температуру в градусах по Цельсию. Вывести в alert соответствующую температуру в градусах по Фаренгейту. Подсказка: расчёт идёт по формуле: Tf = (9 / 5) * Tc + 32, где Tf – температура по Фаренгейту, Tc – температура по Цельсию
+                    </h3>
+                    <input type="submit" value="запустить" class="btn btn__start" onclick="taskOne();">
+                </div>
+
+                <div class="task__two">
+                    <h3>
+                        2. Объявить две переменные: admin и name. Записать в name строку "Василий"; Скопировать значение из name в admin. Вывести admin (должно вывести «Василий»).                    </h3>
+                    <input type="submit" value="запустить" class="btn btn__start" onclick="taskTwo();">
+                    <div class="task__output">
+                        <label class="task__output__name">Введите имя:&nbsp;<input type="text" value="Василий" id="userName"></label>
+                        <p class="task__output__admin" id="outputAdmin"></p>
+                    </div>
+                </div>
+
+                <div class="task__three">
+                    <h3>
+                        3. *Чему будет равно JS-выражение 1000 + "108"
+                    </h3>
+                    <input type="submit" value="запустить" class="btn btn__start" onclick="taskThree();">
+                    <div class="output__sum" id="outputSum"></div>
+                </div>
+
+                <div class="task__for">
+                    <h3>
+                        4. *Самостоятельно разобраться с атрибутами тега script (async и defer)
+                    </h3>
+                    <table class="task__for__answer">
+                       <thead>
+                           <th></th>
+                           <th>Порядок</th>
+                           <th><code>DOMContentLoaded</code></th>
+                       </thead>
+                        <tbody>
+                        <tr class="task__for__async">
+                            <td><code>async</code></td>
+                            <td><em>Порядок загрузки</em> (кто загрузится первым, тот и сработает).</td>
+                            <td> Может загрузиться и выполниться до того, как страница полностью загрузится. Такое случается, если скрипты маленькие или хранятся в кеше, а документ достаточно большой.</td>
+                        </tr>
+                        <tr class="task__for__defer">
+                            <td><code>defer</code></td>
+                            <td><em>Порядок документа</em> (как расположены в документе).</td>
+                            <td>Выполняется после того, как документ загружен и обработан (ждёт), непосредственно перед <code>DOMContentLoaded</code>.</td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <footer class="footer">
+                    <p class="copy">&copy;&nbsp;Copyright&nbsp;2019</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
