@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cart.js" defer></script>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="wrapper">
+            <h2 class="wrapper__h2">Shopping products</h2>
+            <div class="wrapper__catalog">
+                <article class="product">
+                    <img class="product__img" src="img/Layer_43.jpg" alt="photo-product">
+                    <div class="product__text">
+                        <h2><a href="#" class="product__name">Mango People T-shirt</a></h2>
+                        <p class="product__price">&#36;52.00</p>
+                    </div>
+                    <button class="product__add">Add to Cart</button>
+                </article>
+            </div>
+        </div>
+
+        <div class="wrapper wrapper__cart">
+        <table class="shopping__cart__table ">
+            <h2 class="wrapper__h2">Shopping cart</h2>
+
+            <tbody class="goods">
+                <tr>
+                    <th scope="col" class="first__th">Product</th>
+                    <th scope="col" class="cart__th">unite Price</th>
+                    <th scope="col" class="cart__th">Quantity</th>
+                    <th scope="col" class="cart__th">Subtotal</th>
+                    <th scope="col" class="cart__th">ACTION</th>
+                </tr>
+
+                <tr class="product__tr">
+                    <th scope="row" class="first__th">
+                        <h4 class="h4">Товар</h4>
+                    </th>
+                    <td class="cart__td">&#36;150</td>
+                    <td class="cart__td">
+                        <label>
+                            <input type="number" min="1" max="1000" value="2" class="quantity__product">
+                        </label></td>
+                    <td class="cart__td">&#36;300</td>
+                    <td class="cart__td"><button class="remove__product">x</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="shopping__table__link">
+            <button class="clearShoppingCart">cLEAR SHOPPING CART</button>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
